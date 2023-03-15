@@ -1,3 +1,5 @@
+@import '../../../assets/scss/color.scss';
+
 .header{
     background-color: rgb(233, 233, 233);
     display: flex;
@@ -7,47 +9,77 @@
     backdrop-filter: blur(8px);
     padding: 20px 8%;
     z-index: 10;
-    .header-left{
 
+    .header-left{
+        .menu-button {
+            display: none;
+            .menu-icon{
+                font-size: 22px;
+                padding: 0px 10px;
+                cursor: pointer;
+            }
+        }
     }
     .header-right{
       
-        .menu-button{
-            display: none;
-        }
+        
         .menu-items{
             ul{
                 list-style: none;
                 display: flex;
                 li{
-                    margin: 0 15px ;
-                    font-size: 18px;
+                    margin: 0 15px;
+                    font-size: 17px;
                     font-weight: 500;
-                }
-            }
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        .header-right{
-            .menu-button{
-                display: block;
-            }
-            .menu-items{
-                position: absolute;
-                background-color: sandybrown;
-                right: 0;
-                top: 0;
-                height: 100vh;
-                width: 250px;
-                
-                ul{
-                    display: block;
-                    li{
-                        background-color: salmon;
+                    a{
+                        color: $grayColor;
+                    }
+                    .active{
+                        color: black;
                     }
                 }
             }
         }
     }
+}
+
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: block;
+
+        .header-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu-button {
+                display: block;
+            }
+        }
+
+        .header-right {
+            margin-top: 15px;
+            display: none;
+
+
+            .menu-items {
+                width: 100%;
+
+                ul {
+                    display: block;
+                    padding: 0;
+
+                    li {
+                        margin: 0;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .show-menu-item{
+            display: block;
+        }
+    }
+
 }
