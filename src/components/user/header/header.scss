@@ -1,14 +1,14 @@
 @import '../../../assets/scss/color.scss';
 
 .header{
-    background-color: rgb(233, 233, 233);
+    background-color: rgba(233, 233, 233, 0.788);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(8px);
-    padding: 2px 8% 10px 8%;
+    backdrop-filter: blur(30px);
+    padding: 2px 6% 10px 6%;
     z-index: 10;
 
     .header-left{

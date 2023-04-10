@@ -1,4 +1,6 @@
 @import './assets/scss/color.scss';
+@import './assets/scss/button.scss';
+
 
 // inbuilt Styles
 .logo-header {
@@ -8,5 +10,14 @@
     span{
         color: $blueDark3;
         font-size: 37px;
+    }
+}
+
+
+.container {
+    padding: 0 6%;
+
+    @media screen and (max-width:500px) {
+        padding: 0 4%;
     }
 }
