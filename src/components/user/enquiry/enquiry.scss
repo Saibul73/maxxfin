@@ -1,0 +1,149 @@
+@import '../../../assets/scss/color.scss';
+
+.enquiry {
+    background-color: $blue;
+
+    .container {
+        background-color: $white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 15px;
+
+            .left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+
+                img {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+
+                .form-div {
+                    width: 300px;
+                    max-width: 100%;
+
+                    form {
+                        .input-div {
+                            position: relative;
+                            margin: 15px 0;
+
+                            input {
+                                width: 100%;
+                                padding: 8px 12px;
+                                font-size: 14px;
+                                outline: none;
+                                border-radius: 8px;
+                                -webkit-border-radius: 8px;
+                                -moz-border-radius: 8px;
+                                -ms-border-radius: 8px;
+                                -o-border-radius: 8px;
+                                border: $gray4 solid 1px;
+                            }
+
+                            input:focus~label {
+                                background-color: white;
+                                font-size: 11px;
+                                top: -7px;
+                            }
+
+                            input:valid~label {
+
+                                font-size: 11px;
+                                top: -7px;
+                            }
+
+                            textarea {
+                                width: 100%;
+                                max-width: 100%;
+                                max-height: 100px;
+                                min-width: 100%;
+                                min-height: 50px;
+                                padding: 8px 12px;
+                                font-size: 14px;
+                                outline: none;
+                                border-radius: 8px;
+                                -webkit-border-radius: 8px;
+                                -moz-border-radius: 8px;
+                                -ms-border-radius: 8px;
+                                -o-border-radius: 8px;
+                                border: $gray4 solid 1px;
+                            }
+
+                            textarea:focus~label {
+                                background-color: white;
+                                font-size: 11px;
+                                top: -7px;
+                            }
+
+                            textarea:valid~label {
+
+                                font-size: 11px;
+                                top: -7px;
+                            }
+
+                            label {
+                                position: absolute;
+                                left: 10px;
+                                top: 9px;
+                                font-size: 14px;
+                                color: $black;
+                                padding: 0 3px;
+                                font-weight: 500;
+                                transition: 0.3s ease-in-out;
+                                background-color: $white;
+                                -webkit-transition: 0.3s ease-in-out;
+                                -moz-transition: 0.3s ease-in-out;
+                                -ms-transition: 0.3s ease-in-out;
+                                -o-transition: 0.3s ease-in-out;
+                            }
+                        }
+
+                        .button-div {
+                            display: flex;
+                            justify-content: end;
+
+                            button {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (max-width:700px) {
+            .content {
+                grid-template-columns: 1fr;
+
+                .left {
+                    display: none;
+                }
+
+                .right {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        border-radius: 0px 0px 30px 30px;
+        -webkit-border-radius: 0px 0px 30px 30px;
+        -moz-border-radius: 0px 0px 30px 30px;
+        -ms-border-radius: 0px 0px 30px 30px;
+        -o-border-radius: 0px 0px 30px 30px;
+        box-shadow: 0px 12px 0px #74A8FB;
+    }
+}
