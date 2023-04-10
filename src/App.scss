@@ -1,0 +1,12 @@
+@import './assets/scss/color.scss';
+
+// inbuilt Styles
+.logo-header {
+    margin: 0;
+    font-size: 27px;
+    color: $gray7;
+    span{
+        color: $blueDark3;
+        font-size: 37px;
+    }
+}

@@ -4,10 +4,11 @@
     background-color: rgb(233, 233, 233);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     backdrop-filter: blur(8px);
-    padding: 20px 8%;
+    padding: 2px 8% 10px 8%;
     z-index: 10;
 
     .header-left{
@@ -28,14 +29,15 @@
                 list-style: none;
                 display: flex;
                 li{
-                    margin: 0 15px;
-                    font-size: 17px;
+                    margin: 0 25px;
+                    font-size: 14px;
                     font-weight: 500;
                     a{
-                        color: $grayColor;
+                        color: $gray5;
                     }
                     .active{
                         color: black;
+                        font-weight: 600;
                     }
                 }
             }
@@ -73,6 +75,7 @@
                     li {
                         margin: 0;
                         padding: 10px;
+                        
                     }
                 }
             }

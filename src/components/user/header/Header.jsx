@@ -9,8 +9,7 @@ function Header() {
         <div className='header'>
             <div className="header-left">
                 <div className="logo">
-                    {/* <img src="" alt="" /> */}
-                    MAXXFIN
+                    <h1 className='logo-header'>MAXXFIN<span>.</span></h1>
                 </div>
                 <div className="menu-button">
                     <div className='menu-icon' onClick={() => setMenuShow((state) => !state)}><RiMenu3Fill /></div>
@@ -19,10 +18,10 @@ function Header() {
             <div className={menuShow ? "header-right show-menu-item" : "header-right"}>
                 <div className="menu-items">
                     <ul>
-                        <li><NavLink>Home</NavLink></li>
-                        <li><NavLink>Services</NavLink></li>
-                        <li><NavLink>About</NavLink></li>
-                        <li><NavLink>Contact us</NavLink></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        <li><NavLink to='/d'>Services</NavLink></li>
+                        <li><NavLink to='/d'>About</NavLink></li>
+                        <li><NavLink to='/d'>Contact us</NavLink></li>
                     </ul>
                 </div>
             </div>
