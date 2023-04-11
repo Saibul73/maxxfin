@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     const [menuShow, setMenuShow] = useState(false)
     return (
-        <div className='header'>
+        <header className='header'>
             <div className="header-left">
                 <div className="logo">
                     <h1 className='logo-header'>MAXXFIN<span>.</span></h1>
@@ -25,7 +25,7 @@ function Header() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
