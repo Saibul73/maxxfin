@@ -1,0 +1,21 @@
+@import './color.scss';
+
+@mixin normalButton() {
+    border: none;
+    background-color: $gray2;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.btn-blue {
+    @include normalButton();
+    background-color: $blue;
+    color: $white;
+}
